@@ -19,6 +19,8 @@ export default function App() {
 
   const onChangeNumber = props => {
     setNumber(props);
+    //請問下方的function該怎麼做才能直接使用number參數做比較
+    //使用number似乎因為太快，要直到下一次才能讀取到上面setNumber(props)的修改
     isSamePhoneNumber(props);
   };
 
